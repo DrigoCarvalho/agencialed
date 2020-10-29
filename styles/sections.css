@@ -430,3 +430,82 @@
        
     }
  }
+
+ @media (min-width: 1500px){
+    .card-home {
+        height: 342px;
+        width: 368px;
+        
+    }
+    #cards-container {
+        
+        grid-gap: 85px; 
+
+    }
+    .servico {
+        
+        width: 382px;
+        height: 95px;
+        
+    }
+    #projetos-container{
+        
+        grid-gap: 24px;
+           
+    }
+    
+    .projeto {
+        
+        width: 350px;
+        height: 250px;
+        
+    }
+    .title {
+        
+        left:-1%;
+        
+    }
+    #tprojetos {
+        
+        top: -5%;
+    }
+    .contact{
+        width: 300px;
+        height: 300px;
+    
+    }
+    .contact:hover{
+        width: 340px;
+        height: 340px;
+        
+    }
+    .contact:hover .social:nth-child(1){
+        transform: rotate(-60deg) translateY(-180px);
+        
+    }
+    .contact:hover .social:nth-child(2){
+        
+        transform: rotate(-30deg) translateY(-180px);
+       
+    }
+    .contact:hover .social:nth-child(3){
+        
+        transform: rotate(0deg) translateY(-180px);
+       
+    }
+    .contact:hover .social:nth-child(4){
+        
+        transform: rotate(30deg) translateY(-180px);
+        
+    }
+    .contact:hover .social:nth-child(5){
+        
+        transform: rotate(60deg) translateY(-180px);
+        
+    }
+    .title2 {
+       
+        top: -10%;
+         
+    }
+ }
