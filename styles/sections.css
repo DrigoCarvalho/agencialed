@@ -1,0 +1,432 @@
+@import url('global.css');
+
+
+/**Seção Home**/
+#home {
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+
+    
+    
+}
+
+.title {
+    position: relative;
+    color: var(--color-title);
+    font-size: 3.5rem;
+    top: 30%;
+    left:3%;
+    
+}
+.pinkbar{
+    content: "";
+    display: block;
+    position: absolute;
+    left    : 5px;
+    bottom  : 115%;
+    height  : 3px;
+    width   : 50px;
+    border-top:3px solid var(--color-secondary);
+}
+
+#cards-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    
+    
+    
+}
+
+.card-home {
+    height: 250px;
+    width: 280px;
+    background: var(--color-primary);
+}
+
+#card-pink {
+    background: var(--color-secondary);
+}
+
+/**Seção Quem Somos**/
+
+#quemsomos {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#contacts-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.3vw;
+    
+    
+}
+/*240px equivale a 40vh e 19vw*/
+.contact{
+    width: 240px;
+    height: 240px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.contact img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(212, 20, 90, 0.7);
+}
+
+.contact:hover{
+    width: 280px;
+    height: 280px;
+    
+}
+
+.contact:hover .social{
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(212, 20, 90, 0.7);
+}
+
+.contact:hover .social:nth-child(1){
+    transform: rotate(-60deg) translateY(-140px);
+    z-index: 1;
+}
+.contact:hover .social:nth-child(2){
+    transition-delay: 0.1s;
+    transform: rotate(-30deg) translateY(-140px);
+    z-index: 1;
+}
+.contact:hover .social:nth-child(3){
+    transition-delay: 0.2s;
+    transform: rotate(0deg) translateY(-140px);
+    z-index: 1;
+}
+.contact:hover .social:nth-child(4){
+    transition-delay: 0.3s;
+    transform: rotate(30deg) translateY(-140px);
+    z-index: 1;
+}
+.contact:hover .social:nth-child(5){
+    transition-delay: 0.4s;
+    transform: rotate(60deg) translateY(-140px);
+    z-index: 1;
+}
+
+.social i {
+    transition: 0.5s;
+    color: var(--color-font);
+}
+
+
+.social:hover i {
+    transform: rotate(360deg);
+    color: rgba(212, 20, 90, 0.7);
+}
+
+.contact-name {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.title2 {
+    position: relative;
+    align-self: flex-start;
+    color: var(--color-title);
+    font-size: 3.5rem;
+    top: -2%;
+   
+    
+}
+
+/**Seção Serviços**/
+
+#servicos {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#servicos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 77px;
+    
+    
+}
+
+.servico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    border: 2px solid var(--color-font);
+    border-radius: 2%;
+}
+
+.servico:hover {
+    box-shadow: 0 0 20px rgba(212, 20, 90, 0.7);
+    cursor: pointer;
+}
+
+#tservicos {
+    position: relative;
+    align-self: flex-start;
+    color: var(--color-title);
+    font-size: 3.5rem;
+    top: -20%;
+}
+
+/**Seção Projetos**/
+
+#projetos {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#projetos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+       
+}
+
+.projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 200px;
+    border: 1px solid var(--color-font);
+    border-radius: 2%;
+}
+
+.projeto:hover{
+    box-shadow: 0 0 20px rgba(212, 20, 90, 0.7);
+    cursor: pointer;
+}
+
+#tprojetos {
+    position: relative;
+    align-self: flex-start;
+    color: var(--color-title);
+    font-size: 3.5rem;
+    top: 5%;
+}
+
+/**Seção Contato**/
+
+#contato {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+#gforme {
+    display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   align-self: flex-end;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    
+}
+
+#btn-enviar {
+    padding: 0;
+    margin-top: 10px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#tcontato {
+    position: relative;
+    align-self: flex-start;
+    color: var(--color-title);
+    font-size: 3.5rem;
+    top: 20%;
+}
+
+.social-contato {
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-secondary);
+    margin-right: 10px;
+    
+}
+
+.social-box {
+    margin-top: 20px;
+    display: flex;
+}
+
+/**Footer**/
+
+#heart {
+    color: #E31B23;
+}
+
+#perfil {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 1070px){
+    .servico {
+        
+        width: 230px;
+        
+    }
+    #tprojetos {
+        
+        top: -5%;
+    }
+    .title2 {
+        
+        top: -5%;
+       
+        
+    }
+    #contato-texto {
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 930px){ 
+    .card-home {
+        height: 200px;
+        width: 230px;
+        
+    }
+    .servico {
+        
+        width: 200px;
+        
+    }
+    .projeto {
+        
+        width: 230px;
+        height: 200px;
+       
+    }
+}
+
+
+
+@media (max-width: 783px){
+    #cards-container {
+        margin-top: 50px;
+        margin-bottom: 70px;
+        grid-template-columns: 1fr; 
+    }
+    
+    .card-home {
+        height: 250px;
+        width: 80vw;
+        
+    }
+    #contacts-container{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    #servicos-container{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        grid-template-columns: 1fr; 
+        
+    }
+    #projetos-container{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+            
+    }
+    .title {
+       
+        padding-top: 110px;
+        
+        
+    }
+   
+    #pinkbar-top{
+        bottom  : 25%;
+    }
+    .title2 {
+       
+        margin-top: 120px;
+        
+        
+    }
+    #tservicos, #tprojetos {
+        margin-top: 120px;
+    }
+    #contato {
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+
+       
+    }
+    #contato-texto {
+        width: 80vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #gforme {
+       width: 80vw;
+       align-self: center;
+    }
+    .projeto {
+        
+        width: 80vw;
+        height: 250px;
+       
+    }
+ }
